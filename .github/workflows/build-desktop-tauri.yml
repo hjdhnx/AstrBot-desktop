@@ -6,7 +6,7 @@ on:
       source_git_url:
         description: AstrBot source git URL
         required: false
-        default: https://github.com/AstrBotDevs/AstrBot.git
+        default: https://github.com/hjdhnx/AstrBot.git
       source_git_ref:
         description: Optional source ref override for `tag-poll` or required explicit source ref for `custom` (branch/tag/commit SHA).
         required: false
@@ -37,7 +37,7 @@ permissions:
   contents: read
 
 env:
-  ASTRBOT_SOURCE_GIT_URL: ${{ vars.ASTRBOT_SOURCE_GIT_URL || 'https://github.com/AstrBotDevs/AstrBot.git' }}
+  ASTRBOT_SOURCE_GIT_URL: ${{ vars.ASTRBOT_SOURCE_GIT_URL || 'https://github.com/hjdhnx/AstrBot.git' }}
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
   ASTRBOT_SOURCE_GIT_REF: ${{ vars.ASTRBOT_SOURCE_GIT_REF || 'master' }}
   ASTRBOT_NIGHTLY_SOURCE_GIT_REF: ${{ vars.ASTRBOT_NIGHTLY_SOURCE_GIT_REF || 'master' }}

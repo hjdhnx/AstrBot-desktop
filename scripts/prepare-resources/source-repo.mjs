@@ -2,7 +2,7 @@ import { existsSync, mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 
-export const DEFAULT_ASTRBOT_SOURCE_GIT_URL = 'https://github.com/AstrBotDevs/AstrBot.git';
+export const DEFAULT_ASTRBOT_SOURCE_GIT_URL = 'https://github.com/hjdhnx/AstrBot.git';
 
 const SOURCE_REPO_REF_COMMIT_HINT_TRUTHY = new Set(['1', 'true', 'yes', 'on']);
 const SOURCE_FORCE_CHECKOUT_TRUTHY = new Set(['1', 'true', 'yes', 'on']);

@@ -28,3 +28,4 @@ __pycache__/
 
 # local helper scripts
 .astrbot-reset-env.sh
+.idea
