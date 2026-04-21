@@ -18,7 +18,7 @@ const trimEnv = (env, key, fallback = '') => {
 export const createPrepareResourcesContext = ({ argv, env, projectRoot, cwd = process.cwd() }) => {
   const sourceRepoUrlInput =
     trimEnv(env, 'ASTRBOT_SOURCE_GIT_URL') || DEFAULT_ASTRBOT_SOURCE_GIT_URL;
-  const sourceRepoRefInput = trimEnv(env, 'ASTRBOT_SOURCE_GIT_REF');
+  const sourceRepoRefInput = trimEnv(env, 'ASTRBOT_SOURCE_GIT_REF') || 'master';
   const sourceRepoRefCommitHint = trimEnv(env, 'ASTRBOT_SOURCE_GIT_REF_IS_COMMIT');
   const sourceDirOverride = trimEnv(env, 'ASTRBOT_SOURCE_DIR');
   const desktopVersionInput = trimEnv(env, 'ASTRBOT_DESKTOP_VERSION');
