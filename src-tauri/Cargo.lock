@@ -58,7 +58,7 @@ dependencies = [
 
 [[package]]
 name = "astrbot-desktop-tauri"
-version = "4.24.2"
+version = "4.25.5"
 dependencies = [
  "chrono",
  "home",
@@ -73,6 +73,7 @@ dependencies = [
  "tauri-plugin-updater",
  "tempfile",
  "url",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
